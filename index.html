@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The Elegant Man Barber Shop | Ottawa Barber Shop</title>
+  <meta name="description" content="The Elegant Man Barber Shop in Ottawa offers clean cuts, sharp fades, beard grooming, and professional barber services at 50 O'Connor St." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#111827',
+            charcoal: '#1f2937',
+            cream: '#f8f5ef',
+            gold: '#c9a24d',
+            soft: '#f3f4f6'
+          },
+          fontFamily: {
+            heading: ['Oswald', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #f8f5ef; color: #111827; }
+    h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(18px); transition: all .7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+
+<body>
+  <header class="fixed top-0 left-0 w-full z-50 bg-cream/90 backdrop-blur-xl border-b border-black/10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-full bg-ink text-gold flex items-center justify-center">
+          <i data-lucide="scissors" class="w-5 h-5"></i>
+        </div>
+        <div class="leading-tight">
+          <p class="font-heading text-xl sm:text-2xl uppercase tracking-wide font-bold">The Elegant Man</p>
+          <p class="text-xs uppercase tracking-[0.25em] text-ink/60">Barber Shop</p>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-bold uppercase tracking-widest">
+        <a href="#services" class="hover:text-gold">Services</a>
+        <a href="#about" class="hover:text-gold">About</a>
+        <a href="#reviews" class="hover:text-gold">Reviews</a>
+        <a href="#location" class="hover:text-gold">Location</a>
+      </nav>
+
+      <a href="tel:+16132313030" class="hidden lg:flex items-center gap-3 font-bold whitespace-nowrap hover:text-gold">
+        <i data-lucide="phone" class="w-4 h-4"></i>
+        (613) 231-3030
+      </a>
+
+      <button id="menuBtn" class="lg:hidden p-2" aria-label="Open mobile menu">
+        <i data-lucide="menu" class="w-7 h-7"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-cream border-t border-black/10 shadow-xl">
+      <nav class="px-6 py-5 flex flex-col gap-4 font-bold uppercase tracking-widest">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#location">Location</a>
+        <a href="tel:+16132313030" class="bg-ink text-white text-center py-4 rounded-lg">Call Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="pt-32 pb-20 lg:pt-44 lg:pb-28 overflow-hidden relative">
+      <div class="absolute inset-0 opacity-[0.04]" style="background-image: radial-gradient(#111827 1px, transparent 1px); background-size: 28px 28px;"></div>
+
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 reveal">
+            <div class="inline-flex items-center gap-2 bg-white border border-black/10 px-4 py-2 text-xs sm:text-sm font-bold uppercase tracking-[0.22em] text-gold mb-6">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+              Downtown Ottawa
+            </div>
+
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold uppercase leading-[1.02] tracking-tight">
+              Refined Cuts.<br>
+              Sharp Fades.<br>
+              <span class="text-gold">Elegant Finish.</span>
+            </h1>
+
+            <p class="mt-6 text-lg sm:text-xl text-ink/70 leading-relaxed max-w-xl">
+              Premium barbering at 50 O'Connor St in Ottawa. Clean haircuts, detailed fades, and professional grooming in a sharp, comfortable setting.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row gap-4">
+              <a href="tel:+16132313030" class="inline-flex justify-center items-center gap-3 bg-ink text-white px-8 py-5 font-bold uppercase tracking-widest hover:bg-gold hover:text-ink transition">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+                Call Now
+              </a>
+
+              <a href="https://www.google.com/maps/dir/?api=1&destination=The+Elegant+Man+Barber+Shop,+50+O%27Connor+St,+Ottawa,+ON"
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex justify-center items-center gap-3 border-2 border-ink px-8 py-5 font-bold uppercase tracking-widest hover:bg-ink hover:text-white transition">
+                Get Directions
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+              </a>
+            </div>
+
+            <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-xl">
+              <div class="bg-white border border-black/10 p-5">
+                <p class="text-3xl font-heading font-bold">4.6</p>
+                <p class="text-sm text-ink/60 font-semibold">Google Rating</p>
+              </div>
+              <div class="bg-white border border-black/10 p-5">
+                <p class="text-3xl font-heading font-bold">89</p>
+                <p class="text-sm text-ink/60 font-semibold">Reviews</p>
+              </div>
+              <div class="bg-white border border-black/10 p-5 col-span-2 sm:col-span-1">
+                <p class="text-3xl font-heading font-bold">5:30</p>
+                <p class="text-sm text-ink/60 font-semibold">Closes Today</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 reveal" style="transition-delay: 150ms;">
+            <div class="relative">
+              <div class="absolute inset-0 bg-ink translate-x-4 translate-y-4 sm:translate-x-6 sm:translate-y-6"></div>
+              <div class="absolute inset-0 border-2 border-gold -translate-x-4 -translate-y-4 sm:-translate-x-6 sm:-translate-y-6 hidden sm:block"></div>
+
+              <div class="relative h-[430px] sm:h-[560px] lg:h-[680px] overflow-hidden bg-white">
+                <img src="hero-barber.png" alt="Modern men's haircut with sharp styling" class="w-full h-full object-cover contrast-110 grayscale-[8%]" />
+
+                <div class="absolute bottom-6 left-6 bg-cream shadow-2xl p-5 flex items-center gap-4 max-w-xs">
+                  <div class="w-12 h-12 rounded-full bg-ink text-gold flex items-center justify-center">
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                  </div>
+                  <div>
+                    <p class="font-heading text-xl font-bold uppercase">Trusted Local Barber</p>
+                    <p class="text-sm text-ink/65">4.6 stars from 89 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-20 lg:py-28 bg-ink text-white">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="max-w-3xl mb-14 reveal">
+          <p class="text-gold font-bold uppercase tracking-[0.25em] text-sm mb-3">Services</p>
+          <h2 class="text-4xl sm:text-5xl font-bold uppercase">Grooming that looks sharp from every angle.</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white/5 border border-white/10 p-8 reveal hover:bg-white/10 transition">
+            <i data-lucide="scissors" class="w-9 h-9 text-gold mb-6"></i>
+            <h3 class="text-2xl font-bold uppercase mb-3">Classic Cut</h3>
+            <p class="text-white/70 leading-relaxed">Clean, professional haircuts tailored to your style and face shape.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 p-8 reveal hover:bg-white/10 transition" style="transition-delay: 80ms;">
+            <i data-lucide="zap" class="w-9 h-9 text-gold mb-6"></i>
+            <h3 class="text-2xl font-bold uppercase mb-3">Skin Fade</h3>
+            <p class="text-white/70 leading-relaxed">Sharp fades with smooth blending and precise finishing.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 p-8 reveal hover:bg-white/10 transition" style="transition-delay: 160ms;">
+            <i data-lucide="user" class="w-9 h-9 text-gold mb-6"></i>
+            <h3 class="text-2xl font-bold uppercase mb-3">Beard Trim</h3>
+            <p class="text-white/70 leading-relaxed">Beard shaping, line-ups, and clean detailing for a polished look.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 p-8 reveal hover:bg-white/10 transition" style="transition-delay: 240ms;">
+            <i data-lucide="sparkles" class="w-9 h-9 text-gold mb-6"></i>
+            <h3 class="text-2xl font-bold uppercase mb-3">Styling</h3>
+            <p class="text-white/70 leading-relaxed">Finished with the right product and styling for a confident result.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 lg:py-28 bg-cream">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div class="reveal">
+            <p class="text-gold font-bold uppercase tracking-[0.25em] text-sm mb-4">About The Shop</p>
+            <h2 class="text-4xl sm:text-5xl font-bold uppercase mb-6">A polished barber experience in downtown Ottawa.</h2>
+            <p class="text-lg text-ink/75 leading-relaxed mb-6">
+              The Elegant Man Barber Shop gives clients a clean, professional place to get a reliable haircut in the heart of Ottawa. The focus is simple: sharp results, respectful service, and a comfortable chair every visit.
+            </p>
+            <p class="text-lg text-ink/75 leading-relaxed mb-8">
+              Whether you are stopping in before work, heading to an event, or keeping your regular cut fresh, the shop is built around consistency and attention to detail.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="flex items-center gap-3 font-semibold">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-gold"></i>
+                Downtown location
+              </div>
+              <div class="flex items-center gap-3 font-semibold">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-gold"></i>
+                Professional service
+              </div>
+              <div class="flex items-center gap-3 font-semibold">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-gold"></i>
+                Sharp modern cuts
+              </div>
+              <div class="flex items-center gap-3 font-semibold">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-gold"></i>
+                Walk-ins welcome
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white border border-black/10 p-8 sm:p-10 reveal">
+            <h3 class="text-3xl font-bold uppercase mb-6">Why customers choose us</h3>
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <div class="w-12 h-12 rounded-full bg-ink text-gold flex items-center justify-center shrink-0">
+                  <i data-lucide="star" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold uppercase">4.6 Google Rating</h4>
+                  <p class="text-ink/65">Strong social proof from 89 customer reviews.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <div class="w-12 h-12 rounded-full bg-ink text-gold flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold uppercase">Central Ottawa</h4>
+                  <p class="text-ink/65">Located at 50 O'Connor St, easy to reach downtown.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <div class="w-12 h-12 rounded-full bg-ink text-gold flex items-center justify-center shrink-0">
+                  <i data-lucide="phone-call" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold uppercase">Easy to Contact</h4>
+                  <p class="text-ink/65">Customers can call or get directions instantly from the site.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+          <div class="flex justify-center gap-1 text-gold mb-4">
+            <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+            <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+            <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+            <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+            <i data-lucide="star-half" class="w-6 h-6 fill-current"></i>
+          </div>
+          <h2 class="text-4xl sm:text-5xl font-bold uppercase mb-4">Rated 4.6 on Google</h2>
+          <p class="text-lg text-ink/65">A trusted downtown barber shop with 89 Google reviews.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-cream p-8 reveal">
+            <i data-lucide="quote" class="w-10 h-10 text-gold mb-5"></i>
+            <p class="italic text-ink/75 leading-relaxed mb-6">"Great spot downtown for a clean and professional cut. Easy to get to and the service feels personal."</p>
+            <p class="font-bold">Google Review</p>
+          </div>
+
+          <div class="bg-cream p-8 reveal" style="transition-delay: 100ms;">
+            <i data-lucide="quote" class="w-10 h-10 text-gold mb-5"></i>
+            <p class="italic text-ink/75 leading-relaxed mb-6">"Sharp haircut, good attention to detail, and a comfortable shop atmosphere."</p>
+            <p class="font-bold">Google Review</p>
+          </div>
+
+          <div class="bg-cream p-8 reveal" style="transition-delay: 200ms;">
+            <i data-lucide="quote" class="w-10 h-10 text-gold mb-5"></i>
+            <p class="italic text-ink/75 leading-relaxed mb-6">"Reliable barber shop in Ottawa. Professional, clean, and easy to recommend."</p>
+            <p class="font-bold">Google Review</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="py-20 lg:py-28 bg-ink text-white">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
+          <div class="reveal">
+            <p class="text-gold font-bold uppercase tracking-[0.25em] text-sm mb-4">Visit Us</p>
+            <h2 class="text-4xl sm:text-5xl font-bold uppercase mb-6">Stop in for a fresh cut.</h2>
+            <p class="text-white/70 text-lg leading-relaxed mb-8">
+              Located downtown at 50 O'Connor St, Ottawa, ON K1A 1M6.
+            </p>
+
+            <div class="space-y-5 mb-8">
+              <div class="flex gap-4">
+                <i data-lucide="map-pin" class="w-6 h-6 text-gold shrink-0"></i>
+                <p>50 O'Connor St<br>Ottawa, ON K1A 1M6</p>
+              </div>
+              <div class="flex gap-4">
+                <i data-lucide="phone" class="w-6 h-6 text-gold shrink-0"></i>
+                <a href="tel:+16132313030" class="hover:text-gold">+1 613-231-3030</a>
+              </div>
+              <div class="flex gap-4">
+                <i data-lucide="clock" class="w-6 h-6 text-gold shrink-0"></i>
+                <p>Open today · Closes 5:30 PM</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="tel:+16132313030" class="bg-gold text-ink px-8 py-4 font-bold uppercase tracking-widest text-center hover:bg-white transition">Call Now</a>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=The+Elegant+Man+Barber+Shop,+50+O%27Connor+St,+Ottawa,+ON"
+                 target="_blank" rel="noopener noreferrer"
+                 class="border border-white/30 px-8 py-4 font-bold uppercase tracking-widest text-center hover:bg-white hover:text-ink transition">Get Directions</a>
+            </div>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 min-h-[420px] reveal overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps?q=50%20O'Connor%20St%2C%20Ottawa%2C%20ON%20K1A%201M6&output=embed"
+              width="100%"
+              height="100%"
+              style="border:0; min-height: 420px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#080b11] text-white py-10 pb-28 md:pb-10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 flex flex-col md:flex-row justify-between gap-6">
+      <div>
+        <p class="font-heading text-2xl font-bold uppercase">The Elegant Man <span class="text-gold">Barber Shop</span></p>
+        <p class="text-white/50 mt-2">Sharp cuts, clean fades, and premium grooming in Ottawa.</p>
+      </div>
+      <div class="text-white/50 md:text-right">
+        <p>&copy; <span id="year">2026</span> The Elegant Man Barber Shop. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 left-0 w-full z-50 md:hidden bg-gold shadow-2xl">
+    <a href="tel:+16132313030" class="flex items-center justify-center gap-3 py-4 text-ink font-heading text-lg uppercase tracking-widest font-bold">
+      <i data-lucide="phone-call" class="w-5 h-5"></i>
+      Call Now
+    </a>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    lucide.createIcons();
+  </script>
+</body>
+</html>
